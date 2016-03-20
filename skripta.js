@@ -9,10 +9,22 @@ window.addEventListener('load', function() {
         document.getElementById("barve").appendChild(input);
 	}
 	
+	
+	// Izbris
+	
+	function Izbris() {
+		 document.getElementById("barve").innerHTML = "";
+	}
+	
+	
 	document.querySelector("#novaBarva") 
 		.addEventListener('click', dodajBarvo);
 		
 	//Odstrani barve
+	
+	document.querySelector("#odstraniBarve") 
+		.addEventListener('click', Izbris);
+	
 	
 	//Stroboskop
 	var vrednosti = [];
